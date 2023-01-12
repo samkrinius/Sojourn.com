@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityDaftar"
+    android:background="@drawable/tes">
+
+    <TextView
+        android:id="@+id/judulkecil"
+        android:layout_width="257dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/sequelthin"
+        android:gravity="center"
+        android:text="SOJURN Membantu Anda Dalam Menentukan Perjalanan"
+        android:textColor="#2265d2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sudahdaftar" />
+
+    <EditText
+        android:id="@+id/isiname"
+        android:layout_width="271dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="264dp"
+        android:background="@drawable/editpadding"
+        android:drawableStart="@drawable/ic_pp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:paddingLeft="3dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/isiemail"
+        android:layout_width="271dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/editpadding"
+        android:drawableStart="@drawable/ic_email"
+        android:ems="10"
+        android:hint="timbul@gmail.com"
+        android:inputType="textPersonName"
+        android:paddingLeft="3dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isiname" />
+
+    <EditText
+        android:id="@+id/isipw"
+        android:layout_width="271dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/editpadding"
+        android:drawableStart="@drawable/ic_lock"
+        android:ems="10"
+        android:hint="********"
+        android:inputType="textPersonName"
+        android:paddingLeft="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isiemail"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btn_sudahdaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#2265d2"
+        android:text="Registration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isipw" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
